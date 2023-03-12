@@ -164,3 +164,68 @@ main .banner .texto a {
     text-align: center;
     
 }
+
+/* Destaque */
+
+/* main .destaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 555px;
+}
+
+main .destaque .mais-popular {
+    display: flex;
+    align-items: flex-end;
+    height: 155px;
+    width: 274px;
+    border: 1px solid black;
+    
+    background-image: url(../assets/images/Card\ gamer\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .destaque .mais-popular .popular {
+    display: flex;
+    align-items: center;
+    
+    border-top: 1px solid black;
+    height: 40px;
+    width: 274px;
+    
+    background-image: linear-gradient(to right bottom, white, rgba(27, 28, 38, 0));
+}
+
+main .destaque .mais-popular .popular img {
+    margin-left: 10px;
+}
+
+
+main .destaque .ultimo-jogo {
+    display: flex;
+    align-items: flex-end;
+    height: 155px;
+    width: 274px;
+    border: 1px solid black;
+    
+    background-image: url(../assets/images/Card\ gamer\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+main .destaque .ultimo-jogo .ultimo {
+    display: flex;
+    align-items: center;
+
+    border-top: 1px solid black;
+    height: 40px;
+    width: 274px;
+
+    background-image: linear-gradient(to right bottom, white, rgba(27, 28, 38, 0));
+}
+
+main .destaque .ultimo-jogo .ultimo img {
+    margin-left: 10px;
+} */
