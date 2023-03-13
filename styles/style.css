@@ -9,6 +9,11 @@
     src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+@font-face {
+    font-family: Quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
 
 
 /* RESET */
@@ -34,9 +39,16 @@ body {
     margin: 0 auto;
 }
 
-.mostrar-menu {
+.header-bottom .mostrar-menu {
+    opacity: 1;
     left: 0;
 }
+
+.header-bottom .mostrar-usuario {
+    opacity: 1;
+    right: 0;
+}
+
 
 /* justify content + align-items */
 .alinhamento-between-center {
@@ -89,12 +101,16 @@ header .header-bottom nav {
     justify-content: space-evenly;
     align-items: center;
 
+    opacity: 0;
+    transition: left 0.4s, opacity 0.6s;
+
 }
 
 header .header-bottom .menu-usuarios {
     position: fixed;
     top: 60px;
-    right: 0;
+    z-index: 1000;
+    right: -15vw;
     width: 15vw;
     height: calc(30vh - 60px);
 
@@ -105,6 +121,9 @@ header .header-bottom .menu-usuarios {
     border: 1px solid white;
     justify-content: space-evenly;
     align-items: center;
+
+    opacity: 0;
+    transition: right 0.4s, opacity 0.6s;
 
 }
 
@@ -151,10 +170,10 @@ header .header-bottom .midias-sociais {
 /* BANNER */
 main .banner {
     height: 549px;
+    margin-top: 60px;
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
 }
 
 main .banner .texto {
@@ -251,4 +270,125 @@ main .destaque .ultimo-jogo .ultimo {
 
 main .destaque .ultimo-jogo .ultimo img {
     margin-left: 10px;
+}
+
+/* SECTION INFO */
+
+main .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 1535px;
+    background-color: #F9AA01;
+}
+
+main .info h1 {
+    font-size: 18px;
+    color: black;
+    font-family:  TitilliumWeb-Black;
+    text-transform: uppercase;
+
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+main .info .banner-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    width: 313px;
+    height: 511px;
+
+    background-image: url(../assets/images/Info\ Imagem.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main .info .banner-info .jogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 19px;
+    margin-bottom: 41px;
+
+    height: 300px;
+    width: 231px;
+    border: 2px solid white;
+    border-radius: 8px;
+
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80));
+    backdrop-filter: blur(3.5px);
+}
+
+main .info .banner-info .jogos img {
+    width: 92px;
+    height: 98px;
+}
+
+main .info .banner-info h2 {
+    font-size: 18px;
+    font-family: TitilliumWeb-Black;
+    text-shadow: 0px, 4px rgba(198, 165, 229, 0.25);
+    text-transform: uppercase;
+}
+
+main .info .banner-info p {
+    font-size: 13px;
+    font-family: Quicksand;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+
+main .info .banner-info-2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    width: 331px;
+    height: 511px;
+
+    background-image: url(../assets/images/Info\ Imagem2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main .info .banner-info-2 .professores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 36px;
+    margin-bottom: 38px;
+
+    height: 300px;
+    width: 231px;
+    border: 2px solid white;
+    border-radius: 8px;
+
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80));
+    backdrop-filter: blur(3.5px);
+}
+
+main .info .banner-info-2 h2 {
+    font-size: 18px;
+    font-family: TitilliumWeb-Black;
+    text-shadow: 0px, 4px rgba(198, 165, 229, 0.25);
+    text-transform: uppercase;
+}
+
+main .info .banner-info-2 p {
+    font-size: 11px;
+    font-family: Quicksand;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-left: 20px;
 }

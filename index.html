@@ -88,10 +88,10 @@
                 </nav>
 
                 <!-- MENU 3 PONTINHOS -->
-                <img class="menu-pontinhos" src="../Projeto-Gamer-1-dm/assets/icones/menu 3 pontinhos.svg"
+                <img onclick="mostrarUsuario()" class="menu-pontinhos" src="../Projeto-Gamer-1-dm/assets/icones/menu 3 pontinhos.svg"
                     alt="icone 3 pontinhos, abre e fecha o menu de usuarios">
 
-                <div class="menu-usuarios">
+                <div class="menu-usuarios" id="usuarios">
                     <a href="">
                         <img src="../Projeto-Gamer-1-dm/assets/icones/perfil.svg" alt="ícone de perfil">
                     </a>
@@ -130,6 +130,32 @@
                 </article>
         </section>
 
+        <section class="info">
+            <h1>entre para o time progamer</h1>
+            <div class="banner-info layout-grid">
+                <article class="jogos ">
+                    <img src="../Projeto-Gamer-1-dm/assets/icones/joystick.svg" alt="">
+                    <h2>20 jogos diferentes</h2>
+                    <p>São mais de 20 jogos em<br>
+                       2 plataformas para <br> 
+                       você aprender as <br>
+                       melhores técnicas.</p>
+                </article>
+            </div>
+            <div class="banner-info-2 layout-grid">
+                <article class="professores ">
+                    <img src="../Projeto-Gamer-1-dm/assets/icones/icone usuario.svg" alt="">
+                    <h2>20 jogos diferentes</h2>
+                    <p>Temos 53 Proplayers no nosso <br>
+                         time para ensinar todas as es- <br> 
+                         tratégias, você vai aprender do 
+                         básico ao avançado. <br>
+                         Tempo de treinamento, des- <br>
+                         canso, equipamentos. </p>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -138,6 +164,10 @@
     <script>
         function mostrarMenu() {
            document.getElementById("menu").classList.toggle("mostrar-menu"); 
+        }
+        
+        function mostrarUsuario() {
+           document.getElementById("usuarios").classList.toggle("mostrar-usuario"); 
         }
     </script>
 
