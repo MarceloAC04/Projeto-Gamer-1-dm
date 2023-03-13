@@ -47,33 +47,28 @@
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!--MENU HAMBURGER  -->
-                <img class="menu-hamburger" src="../Projeto-Gamer-1-dm/assets/icones/menu-hamburger.svg"
+                <img onclick="mostrarMenu()" class="menu-hamburger" src="../Projeto-Gamer-1-dm/assets/icones/menu-hamburger.svg"
                     alt="ícone para abrir e fechar o menu mobile">
 
                 <img class="logo" src="../Projeto-Gamer-1-dm/assets/images/Logotipo gamer.png"
                     alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
 
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <a href="">Início</a>
-                    <hr>
                     <a href="">Jogadores</a>
-                    <hr>
                     <a href="">Equipes</a>
-                    <hr>
                     <a href="">Notícia</a>
-                    <hr>
 
                     <!-- visivel apenas no mobile -->
 
-                    <div class="phone">
+                    <a class="phone">
                         <img src="../Projeto-Gamer-1-dm/assets/icones/call.svg" alt="ìcone de telefone">
                         <span>(11) 0900-1010</span>
-                    </div>
-                    <hr>
-                    <div class="email">
+                    </a>
+                    <a class="email">
                         <img src="../Projeto-Gamer-1-dm/assets/icones/email.svg" alt="ìcone de e-email">
                         <span>contato@gamer.com.br</span>
-                    </div>
+                    </a>
 
                     <div class="midias-sociais">
                         <a href="">
@@ -120,7 +115,7 @@
             </div>
         </section>
 
-        <!-- <section class="destaque layout-grid">
+        <section class="destaque layout-grid">
                 <article class="mais-popular">
                     <div class="popular">
                         <img src="../Projeto-Gamer-1-dm/assets/icones/Mais Popular.svg" alt="Card escrito mais popular">
@@ -133,12 +128,18 @@
                         <img src="../Projeto-Gamer-1-dm/assets/icones/Último jogo.svg" alt="Card escrito último jogo">
                     </div>
                 </article>
-        </section> -->
+        </section>
 
     </main>
 
     <footer>
     </footer>
+
+    <script>
+        function mostrarMenu() {
+           document.getElementById("menu").classList.toggle("mostrar-menu"); 
+        }
+    </script>
 
 </body>
 
