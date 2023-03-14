@@ -39,15 +39,7 @@ body {
     margin: 0 auto;
 }
 
-.header-bottom .mostrar-menu {
-    opacity: 1;
-    left: 0;
-}
 
-.header-bottom .mostrar-usuario {
-    opacity: 1;
-    right: 0;
-}
 
 
 /* justify content + align-items */
@@ -106,6 +98,11 @@ header .header-bottom nav {
 
 }
 
+header .header-bottom .mostrar-menu {
+    opacity: 1;
+    left: 0;
+}
+
 header .header-bottom .menu-usuarios {
     position: fixed;
     top: 60px;
@@ -125,6 +122,11 @@ header .header-bottom .menu-usuarios {
     opacity: 0;
     transition: right 0.4s, opacity 0.6s;
 
+}
+
+header .header-bottom .mostrar-usuario {
+    opacity: 1;
+    right: 0;
 }
 
 header .header-bottom nav>a {
@@ -168,12 +170,15 @@ header .header-bottom .midias-sociais {
 /*  MAIN */
 
 /* BANNER */
-main .banner {
-    height: 549px;
+main {
     margin-top: 60px;
+}
+
+main .banner {
+    height: 606px;
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1\ 1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 main .banner .texto {
@@ -193,7 +198,7 @@ main .banner .texto h1 {
     ;
 }
 
-main .banner .texto a {
+main .banner .texto .botao-sobre {
     font-family: TitilliumWeb-Black;
     font-size: 24px;
     text-decoration: none;
@@ -286,11 +291,12 @@ main .info {
 main .info h1 {
     font-size: 18px;
     color: black;
-    font-family:  TitilliumWeb-Black;
+    font-family: TitilliumWeb-Black;
     text-transform: uppercase;
 
     border-bottom: 2px solid black;
     padding-bottom: 30px;
+    margin-top: -110px;
 }
 
 main .info .banner-info {
@@ -303,7 +309,7 @@ main .info .banner-info {
 
     background-image: url(../assets/images/Info\ Imagem.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
 }
 
@@ -332,7 +338,7 @@ main .info .banner-info .jogos img {
 main .info .banner-info h2 {
     font-size: 18px;
     font-family: TitilliumWeb-Black;
-    text-shadow: 0px, 4px rgba(198, 165, 229, 0.25);
+    text-shadow: 0px 4px 6px rgba(198, 165, 229, 0.25);
     text-transform: uppercase;
 }
 
@@ -356,7 +362,7 @@ main .info .banner-info-2 {
 
     background-image: url(../assets/images/Info\ Imagem2.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
 }
 
@@ -380,7 +386,7 @@ main .info .banner-info-2 .professores {
 main .info .banner-info-2 h2 {
     font-size: 18px;
     font-family: TitilliumWeb-Black;
-    text-shadow: 0px, 4px rgba(198, 165, 229, 0.25);
+    text-shadow: 0px 4px 6px rgba(198, 165, 229, 0.25);
     text-transform: uppercase;
 }
 
@@ -391,4 +397,84 @@ main .info .banner-info-2 p {
     font-style: normal;
     text-transform: uppercase;
     margin-left: 20px;
+}
+
+/* SECTION NOTICIAS */
+
+main .noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3671px;
+
+    background-image: url(../assets/images/fundo\ noticias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+main .noticias h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    border-bottom: 2px solid #F9AA01;
+    width: 204px;
+    padding-top: 37px;
+    padding-bottom: 10px;
+
+}
+
+main .noticias .cards-noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .noticias .cards-noticias .noticia {
+    width: 335px;
+    height: 387px;
+
+    background-image: linear-gradient(to right bottom, rgba(37, 26, 52, 0.34), rgba(5, 1, 12, 0.79) 100%);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    ;
+}
+
+main .noticias .cards-noticias .noticia h2 {
+    font-family: TitilliumWeb-Black;
+    font-size: 24px;
+   
+    margin-top: 16px;
+    margin-left: 13px;
+}
+
+main .noticias .cards-noticias .noticia p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    
+    margin-top: 16px;
+    margin-left: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1488px;
+
+    background-image: url(../assets/images/rodapé\ mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer .logo {
+    height: 31px;
+    width: 110px;
 }
