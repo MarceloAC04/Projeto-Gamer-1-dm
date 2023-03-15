@@ -199,8 +199,7 @@ main .banner .texto h1 {
 
     font-family: TitilliumWeb-Black;
     font-size: 25px;
-    text-shadow: 2px 2px 5px rgba(249, 0, 61, 0.4);
-    ;
+    text-shadow: 0px 4px 7px rgba(253, 66, 85, 0.5);
 }
 
 main .banner .texto .botao-sobre {
@@ -449,7 +448,7 @@ main .noticias .cards-noticias .noticia {
 }
 
 main .noticias .cards-noticias .noticia h2 {
-    font-family: TitilliumWeb-Black;
+    font-family: TitilliumWeb;
     font-size: 24px;
 
     margin-top: 16px;
@@ -526,14 +525,14 @@ footer .links-uteis a {
 
     display: inline-flex;
     align-items: center;
-    height: 2px;
+    height: 1px;
 
 
     border-left: 1px solid #F9AA01;
     border-left-width: 17px;
     margin-right: 32px;
     margin-bottom: 32px;
-    
+
 }
 
 footer .contato .contato-info {
@@ -586,4 +585,199 @@ footer .copyright {
     margin-bottom: 50px;
     font-family: TitilliumWeb;
     font-size: 16px;
+}
+
+/* MEDIAS QUIERES */
+
+@media screen and (min-width: 1200px) {
+
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    /* HEADER DESKTOP */
+
+    header {
+        position: static;
+        height: 140px;
+    }
+    
+    header .header-bottom nav  {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+    }
+
+    header .menu-hamburger,
+    header .menu-pontinhos,
+    header .header-bottom nav .email,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    
+    }
+
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+
+
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        flex-direction: row;
+        width: 180px;
+        height: 50px;
+        background-color: transparent;
+    }
+
+
+    /* MAIN DESKTOP */
+    /* Banner desktop */
+
+    main {
+        margin-top: 0;
+    }
+
+    main .banner {
+        height: 782px;
+
+        background-image: url(../assets/images/Banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main .banner .texto h1 {
+        font-size: 80px;
+
+    }
+
+    main .banner .texto .botao-sobre {
+        width: 204px;
+    }
+
+    /* Destaque desktop */
+
+    main .destaque {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 502px;
+
+    }
+
+    main .destaque .mais-popular {
+        height: 313px;
+        width: 557px;
+    }
+
+    main .destaque .mais-popular .popular {
+        width: 554px;
+        height: 87px;
+        margin-left: 2px;
+    }
+
+    main .destaque .mais-popular .popular img {
+        height: 57px;
+        width: 221px;
+    }
+
+    main .destaque .ultimo-jogo {
+        height: 313px;
+        width: 557px;
+    }
+
+    main .destaque .ultimo-jogo .ultimo {
+        width: 555px;
+        height: 87px;
+        margin-left: 2px;
+    }
+
+    main .destaque .ultimo-jogo .ultimo img {
+        height: 57px;
+        width: 221px;
+    }
+
+    /* info desktop */
+
+    main .info {
+        position: relative;
+        flex-direction: row;
+        height: 1117px;
+    }
+
+    main .info h1 {
+        position: absolute;
+        top: 45px;
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    main .info .banner-info {
+        height: 692px;
+        width: 425px;
+    }
+
+    main .info .banner-info .jogos {
+        height: 440px;
+        width: 360px;
+    }
+
+    main .info .banner-info .jogos img {
+        width: 143px;
+        height: 143px;
+    }
+
+    main .info .banner-info h2 {
+        font-size: 25px;
+        font-family: TitilliumWeb-Black;
+        text-shadow: 0px 4px 6px rgba(198, 165, 229, 0.25);
+        text-transform: uppercase;
+    }
+
+    main .info .banner-info p {
+        font-size: 16px;
+        font-family: Quicksand;
+        line-height: 20px;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+
+    main .info .banner-info-2 {
+        height: 692px;
+        width: 511px;
+
+    }
+
+    main .info .banner-info-2 .professores {
+        height: 440px;
+        width: 360px;
+    }
+
+    main .info .banner-info .professores img {
+        width: 143px;
+        height: 143px;
+    }
+
+    main .info .banner-info-2 h2 {
+        font-size: 25px;
+        font-family: TitilliumWeb-Black;
+        text-shadow: 0px 4px 6px rgba(198, 165, 229, 0.25);
+        text-transform: uppercase;
+    }
+
+    main .info .banner-info-2 p {
+        font-size: 16px;
+        font-family: Quicksand;
+        line-height: 20px;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+
+
 }
