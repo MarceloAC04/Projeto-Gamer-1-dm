@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: TitilliumWeb;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
     font-family: Inter;
     src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
@@ -178,7 +183,7 @@ main .banner {
     height: 606px;
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1\ 1.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 main .banner .texto {
@@ -446,7 +451,7 @@ main .noticias .cards-noticias .noticia {
 main .noticias .cards-noticias .noticia h2 {
     font-family: TitilliumWeb-Black;
     font-size: 24px;
-   
+
     margin-top: 16px;
     margin-left: 13px;
 }
@@ -456,7 +461,7 @@ main .noticias .cards-noticias .noticia p {
     font-style: normal;
     font-size: 16px;
     font-weight: 700;
-    
+
     margin-top: 16px;
     margin-left: 8px;
 }
@@ -464,17 +469,121 @@ main .noticias .cards-noticias .noticia p {
 /* FOOTER */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: 1488px;
-
     background-image: url(../assets/images/rodapé\ mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+footer .footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 footer .logo {
+    align-self: center;
+    margin-top: 50px;
     height: 31px;
     width: 110px;
+}
+
+footer p {
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+footer .midias-sociais {
+    display: flex;
+    width: 328px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+footer hr {
+    border: 1px solid #F9AA01;
+    margin-bottom: 20px;
+    width: 104px;
+
+}
+
+footer .links-uteis a {
+    font-family: TitilliumWeb;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 5px;
+
+    display: inline-flex;
+    align-items: center;
+    height: 2px;
+
+
+    border-left: 1px solid #F9AA01;
+    border-left-width: 17px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    
+}
+
+footer .contato .contato-info {
+    color: #F9AA01;
+    font-family: TitilliumWeb;
+    font-size: 16px;
+}
+
+footer .contato p {
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+footer .newsletter .envie {
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    height: 40px;
+    width: 333px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(to right bottom, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
+    border: 1px solid #000000;
+    backdrop-filter: blur(3px);
+
+}
+
+footer .newsletter .botao-enviar {
+    font-family: TitilliumWeb-Black;
+    font-size: 24px;
+    color: black;
+    height: 40px;
+    width: 333px;
+
+    background: #F9AA01;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+footer .rodapé-button {
+    align-self: flex-end;
+}
+
+footer .copyright {
+    align-self: center;
+    margin-bottom: 50px;
+    font-family: TitilliumWeb;
+    font-size: 16px;
 }
