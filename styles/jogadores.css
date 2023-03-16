@@ -141,8 +141,6 @@ header .header-bottom nav>a:last-of-type {
     border: none;
 }
 
-
-
 header .header-bottom nav a {
     text-decoration: none;
     font-size: 15px;
@@ -158,83 +156,12 @@ header .header-bottom nav span {
     color: white;
 }
 
-
 header .header-bottom .midias-sociais {
     display: flex;
     width: 200px;
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
-}
-
-/* MAIN */
-
-/* Login */
-main {
-    margin-top: 60px;
-}
-
-main .login {
-    height: 698px;
-    justify-content: center;
-
-    background-image: url(../assets/images/Login-mobile.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    backdrop-filter: blur(1px);
-}
-
-main .login .logar h1 {
-    font-family: TitilliumWeb-Black;
-    font-size: 30px;
-    border-top: 2px solid #F9AA01;
-}
-
-main .login .logar input {
-    width: 273px;
-    height: 40px;
-
-    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
-    border-radius: 8px;
-}
-
-.email::placeholder {
-    background-image: url(../assets/icones/user-login.svg);
-    background-repeat: no-repeat;
-
-    font-family: TitilliumWeb;
-    font-size: 16px;
-    color: white;
-}
-
-.senha::placeholder {
-    background-image: url(../assets/icones/chave.svg);
-    background-repeat: no-repeat;
-
-    font-family: TitilliumWeb;
-    font-size: 16px;
-    color: white;
-
-}
-
-main .login .logar button {
-    height: 40px;
-    width: 273px;
-    font-family: TitilliumWeb-Black;
-    font-size: 24px;
-    background: #F9AA01;
-    border-radius: 8px;
-
-}
-
-main .login .logar {
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 462px;
-    width: 335px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(152.38deg, rgba(27, 20, 38, 0.6) 1.56%, rgba(60, 3, 65, 0.38) 99.03%);
-    border-radius: 8px;
-
 }
 
 /* Footer */
@@ -474,45 +401,6 @@ footer .copyright {
         font-weight: 400;
     }
 
-    /* MAIN Desktop*/
-    /* login Desktop*/
-
-    main {
-        margin-top: 0;
-    }
-
-    main .login {
-        height: 698px;
-
-        background-image: url(../assets/images/Login.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    main .login .logar {
-        height: 520px;
-        width: 800px;
-    }
-
-    main .login .logar h1 {
-        font-size: 40px;
-        border-top: transparent;
-        border-bottom: 2px solid #F9AA01;
-    }
-
-    main .login .logar input {
-        height: 40px;
-        width: 565px;
-    }
-
-
-    main .login .logar button {
-        height: 57px;
-        width: 201px;
-
-    }
-
-
     /* Footer Deskstop */
 
     footer {
@@ -589,6 +477,4 @@ footer .copyright {
         left: 40%;
         width: 270px;
     }
-
-
 }
