@@ -673,7 +673,21 @@ footer .copyright {
     header .header-top .contatos {
         width: 337px;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .header-top .phone {
+        display: flex;
+        width: 125px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .header-top .email {
+        display: flex;
+        width: 175px;
         justify-content: space-between;
         align-items: center;
     }
@@ -681,7 +695,7 @@ footer .copyright {
     header .header-top .midias-sociais {
         width: 180px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -700,11 +714,12 @@ footer .copyright {
     }
 
     main .banner {
-        height: 722px;
+        height: 762px;
+        width: 100%;
 
         background-image: url(../assets/images/Banner.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 
     main .banner .texto h1 {
@@ -861,10 +876,9 @@ footer .copyright {
     }
 
     main .noticias .cards-noticias {
-        width: auto;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     main .noticias .cards-noticias .noticia {
@@ -886,28 +900,59 @@ footer .copyright {
     }
 
     footer .divulgacao .logo {
+        margin-right: 50px;
         width: 200px;
         height: 60px;
     }
 
+    footer .divulgacao .midias-sociais {
+        justify-content: space-evenly;
+        padding-right: 80px;
+    }
+
+    footer .divulgacao p {
+        font-size: 16px;
+        height: 77px;
+        width: 285px;
+    }
+
     footer .links-uteis {
         margin-top: 50px;
-        margin-left: 10px;
+        margin-left: 27px;
+    }
+
+    footer .links-uteis h1 {
+        width: 148px;
     }
 
     footer .contato {
         margin-top: 50px;
-        margin-right: 30px;
+        margin-left: 117px;
+        margin-right: 10px;
+    }
+
+    footer .contato p {
+        width: 309px;
     }
 
     footer .newsletter {
+        position: relative;
+        display: flex;
+        flex-direction: column;
         margin-top: 50px;
+        left: 31px;
+    }
+
+    footer .newsletter .button {
+        height: 34px;
+        width: 257px;
     }
 
 
     footer .rodapé-button {
-        position: relative;
-        bottom: 115px;
+        position: absolute;
+        bottom: 70px;
+        right: 50px;
     }
 
     footer .copyright {
@@ -915,8 +960,6 @@ footer .copyright {
         align-self: last baseline;
         left: 40%;
         width: 270px;
-
     }
-
 
 }
