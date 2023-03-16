@@ -426,6 +426,7 @@ main .noticias h1 {
 
     border-bottom: 2px solid #F9AA01;
     width: 204px;
+    margin-bottom: 30px;
     padding-top: 37px;
     padding-bottom: 10px;
 
@@ -438,6 +439,7 @@ main .noticias .cards-noticias {
 }
 
 main .noticias .cards-noticias .noticia {
+    margin-bottom: 60px;
     width: 335px;
     height: 387px;
 
@@ -480,14 +482,21 @@ footer .footer-flex {
     justify-content: space-between;
 }
 
-footer .logo {
+footer .divulgacao {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .divulgacao .logo {
     align-self: center;
     margin-top: 50px;
+    margin-bottom: 40px;
     height: 31px;
     width: 110px;
 }
 
-footer p {
+footer .divulgacao p {
+    margin-bottom: 40px;
     font-family: Quicksand;
     font-size: 14px;
     font-weight: 400;
@@ -576,6 +585,7 @@ footer .newsletter .botao-enviar {
     border-radius: 8px;
 }
 
+
 footer .rodapé-button {
     align-self: flex-end;
 }
@@ -602,12 +612,23 @@ footer .copyright {
         position: static;
         height: 140px;
     }
-    
-    header .header-bottom nav  {
+
+    header .header-bottom nav {
         position: static;
+        opacity: 1;
         width: 440px;
         height: 50px;
+        margin-bottom: 50px;
         flex-direction: row;
+        border: none;
+    }
+
+
+    header .header-bottom nav a {
+        border: transparent;
+        background-color: transparent;
+        padding-bottom: 0;
+
     }
 
     header .menu-hamburger,
@@ -616,21 +637,58 @@ footer .copyright {
     header .header-bottom nav .phone,
     header .header-bottom nav .midias-sociais {
         display: none;
-    
+
     }
 
     header .header-bottom img.logo {
         width: 200px;
+        margin-bottom: 50px;
     }
-
-
 
     header .header-bottom .menu-usuarios {
         position: static;
+        opacity: 1;
+        border: transparent;
+        background-color: transparent;
         flex-direction: row;
+        margin-bottom: 50px;
         width: 180px;
         height: 50px;
         background-color: transparent;
+    }
+
+    header .header-top {
+        display: block;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .top-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .header-top .contatos {
+        width: 337px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .header-top .midias-sociais {
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .header-top .contatos span {
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 400;
     }
 
 
@@ -642,11 +700,11 @@ footer .copyright {
     }
 
     main .banner {
-        height: 782px;
+        height: 722px;
 
         background-image: url(../assets/images/Banner.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     main .banner .texto h1 {
@@ -715,11 +773,15 @@ footer .copyright {
     }
 
     main .info .banner-info {
+        position: relative;
         height: 692px;
         width: 425px;
     }
 
     main .info .banner-info .jogos {
+        position: absolute;
+        bottom: 20px;
+        left: 42%;
         height: 440px;
         width: 360px;
     }
@@ -747,12 +809,16 @@ footer .copyright {
     }
 
     main .info .banner-info-2 {
+        position: relative;
         height: 692px;
         width: 511px;
 
     }
 
     main .info .banner-info-2 .professores {
+        position: absolute;
+        bottom: 22px;
+        right: 42%;
         height: 440px;
         width: 360px;
     }
@@ -777,6 +843,79 @@ footer .copyright {
         font-style: normal;
         text-transform: uppercase;
         text-align: justify;
+    }
+
+    /* Notícia Desktop */
+
+    main .noticias {
+        height: 1250px;
+        background-image: url(../assets/images/Notícia.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main .noticias h1 {
+        font-size: 40px;
+        width: 204px;
+        margin-bottom: 60px;
+    }
+
+    main .noticias .cards-noticias {
+        width: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main .noticias .cards-noticias .noticia {
+        margin-bottom: 60px;
+    }
+
+    /* Footer Deskstop */
+
+    footer {
+        position: relative;
+        height: 520px;
+        background-image: url(../assets/images/Rodapé.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    footer .footer-flex {
+        flex-direction: row;
+    }
+
+    footer .divulgacao .logo {
+        width: 200px;
+        height: 60px;
+    }
+
+    footer .links-uteis {
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    footer .contato {
+        margin-top: 50px;
+        margin-right: 30px;
+    }
+
+    footer .newsletter {
+        margin-top: 50px;
+    }
+
+
+    footer .rodapé-button {
+        position: relative;
+        bottom: 115px;
+    }
+
+    footer .copyright {
+        position: absolute;
+        align-self: last baseline;
+        left: 40%;
+        width: 270px;
+
     }
 
 
