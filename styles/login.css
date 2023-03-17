@@ -34,6 +34,7 @@ body {
     background-color: #1B1426;
 }
 
+
 /* MOBILE FIRST */
 
 /* Classes genéricas */
@@ -42,6 +43,9 @@ body {
     height: 100%;
     margin: 0 auto;
 }
+
+
+
 
 /* justify content + align-items */
 .alinhamento-between-center {
@@ -77,6 +81,7 @@ header .header-bottom img.logo {
     width: 86px;
 }
 
+
 header .header-bottom nav {
     position: fixed;
     z-index: 1000;
@@ -96,6 +101,10 @@ header .header-bottom nav {
     opacity: 0;
     transition: left 0.4s, opacity 0.6s;
 
+}
+
+header .header-bottom nav a:hover {
+    background-color: #F9AA01;
 }
 
 header .header-bottom .mostrar-menu {
@@ -165,7 +174,9 @@ header .header-bottom .midias-sociais {
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
+
 }
+
 
 /* MAIN */
 
@@ -398,6 +409,11 @@ footer .copyright {
         background-color: transparent;
         padding-bottom: 0;
 
+    }
+
+    header .header-bottom nav a:hover {
+        background-color: transparent;
+        color: #F9AA01;
     }
 
     header .menu-hamburger,

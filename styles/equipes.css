@@ -98,6 +98,10 @@ header .header-bottom nav {
 
 }
 
+header .header-bottom nav a:hover {
+    background-color: #F9AA01;
+}
+
 header .header-bottom .mostrar-menu {
     opacity: 1;
     left: 0;
@@ -162,6 +166,105 @@ header .header-bottom .midias-sociais {
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Main */
+
+main .equipes {
+    height: 1237px;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    background-image: url(../assets/images/equipes-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .equipes .cadastro {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 492px;
+    width: 335px;
+    border-radius: 8px;
+    background: linear-gradient(155.31deg, rgba(27, 20, 38, 0.6) 1.6%, rgba(60, 3, 65, 0.38) 99.01%);
+
+}
+
+main .equipes .cadastro h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 28px;
+}
+
+main .equipes .cadastro hr {
+    border-color: #F9AA01;
+    width: 250px;
+}
+
+main .equipes .cadastro .id,
+.nome {
+    width: 273px;
+    height: 40px;
+
+    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
+    border-radius: 8px;
+}
+
+.id::placeholder {
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.nome::placeholder {
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+main .equipes .cadastro button {
+    width: 273px;
+    height: 40px;
+    font-family: TitilliumWeb-Black;
+    font-size: 24px;
+
+    background-color: #F9AA01;
+    border-radius: 8px;
+}
+
+main .equipes .tabela {
+    width: 100%;
+}
+
+main .equipes .tabela th {
+    border-bottom: 2px solid #F9AA01;
+}
+
+main .equipes .tabela .header-table th {
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F9AA01;
+}
+
+main .equipes .tabela .equipe-table {
+    width: 336px;
+    height: 70px;
+
+    background: linear-gradient(92.62deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 95.16%);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+
+main .equipes .tabela .equipe-table td {
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+    border-right: 2px solid #F9AA01;
+
 }
 
 /* Footer */
@@ -325,6 +428,11 @@ footer .copyright {
         background-color: transparent;
         padding-bottom: 0;
 
+    }
+
+    header .header-bottom nav>a:hover {
+        background-color: transparent;
+        color: #F9AA01;
     }
 
     header .menu-hamburger,

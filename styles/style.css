@@ -103,6 +103,10 @@ header .header-bottom nav {
 
 }
 
+header .header-bottom nav a:hover {
+    background-color: #F9AA01;
+}
+
 header .header-bottom .mostrar-menu {
     opacity: 1;
     left: 0;
@@ -629,6 +633,11 @@ footer .copyright {
         background-color: transparent;
         padding-bottom: 0;
 
+    }
+
+    header .header-bottom nav a:hover {
+        background-color: transparent;
+        color: #F9AA01;
     }
 
     header .menu-hamburger,
