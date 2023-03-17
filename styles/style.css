@@ -891,7 +891,13 @@ footer .copyright {
     }
 
     main .noticias .cards-noticias .noticia {
+        width: 278px;
         margin-bottom: 60px;
+    }
+
+    main .noticias .cards-noticias .noticia img {
+        width: 278px;
+        height: 158px;
     }
 
     /* Footer Deskstop */

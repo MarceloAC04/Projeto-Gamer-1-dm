@@ -170,17 +170,19 @@ header .header-bottom .midias-sociais {
 
 /* Main */
 
-main .equipes {
-    height: 1237px;
+main .jogadores {
+    height: 1411px;
     justify-content: space-evenly;
     flex-direction: column;
 
-    background-image: url(../assets/images/equipes-mobile.png);
+    background-image: url(../assets/images/jogadores\ -\ mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    backdrop-filter: blur(3px);
 }
 
-main .equipes .cadastro {
+main .jogadores .cadastro {
     flex-direction: column;
     justify-content: space-evenly;
     height: 492px;
@@ -190,18 +192,18 @@ main .equipes .cadastro {
 
 }
 
-main .equipes .cadastro h1 {
+main .jogadores .cadastro h1 {
     font-family: TitilliumWeb-Black;
+    text-align: center;
     font-size: 28px;
 }
 
-main .equipes .cadastro hr {
+main .jogadores .cadastro hr {
     border-color: #F9AA01;
-    width: 250px;
+    width: 300px;
 }
 
-main .equipes .cadastro .id,
-.nome {
+main .jogadores .cadastro input {
     width: 273px;
     height: 40px;
 
@@ -215,15 +217,37 @@ main .equipes .cadastro .id,
     line-height: 24px;
     color: white;
 }
+.selecione::placeholder {
+    background-image: url(../assets/icones/selection.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
 
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
 .nome::placeholder {
     font-family: TitilliumWeb;
     font-size: 16px;
     line-height: 24px;
     color: white;
 }
+.email::placeholder {
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
 
-main .equipes .cadastro button {
+.senha::placeholder {
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+main .jogadores .cadastro button {
     width: 273px;
     height: 40px;
     font-family: TitilliumWeb-Black;
@@ -233,24 +257,24 @@ main .equipes .cadastro button {
     border-radius: 8px;
 }
 
-main .equipes .tabela {
+main .jogadores .tabela {
     width: 90%;
 }
 
-main .equipes .tabela th {
+main .jogadores .tabela th {
     text-transform: uppercase;
     border-bottom: 2px solid #F9AA01;
     margin-bottom: 10px;
 }
 
-main .equipes .tabela .header-table th {
+main .jogadores .tabela .header-table th {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
     line-height: 30px;
     color: #F9AA01;
 }
 
-main .equipes .tabela .equipe-table {
+main .jogadores .tabela .jogadores-table {
     width: 336px;
     height: 70px;
 
@@ -259,17 +283,15 @@ main .equipes .tabela .equipe-table {
     border-radius: 8px;
 }
 
-main .equipes .tabela .equipe-table td {
+main .jogadores .tabela .jogadores-table td {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    text-transform: uppercase;
-
     border-right: 2px solid #F9AA01;
 }
 
-main .equipes .tabela .equipe-table>td:last-of-type {
+main .jogadores .tabela .jogadores-table>td:last-of-type {
     border-right: transparent;
 }
 
@@ -515,60 +537,59 @@ footer .copyright {
         font-weight: 400;
     }
 
-    /* Main */
-    /* Cadastro */
-    main .equipes {
-        height: 1480px;
+    /* Main Desktop*/
+    /* Cadastro Desktop*/
+    main .jogadores {
+        height: 1372px;
 
-        background-image: url(../assets/images/Equipes.png);
+        background-image: url(../assets/images/jogadores.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    main .equipes .cadastro {
+    main .jogadores .cadastro {
         width: 800px;
-        height: 520px;
+        height: 670px;
     }
 
-    main .equipes .cadastro h1 {
+    main .jogadores .cadastro h1 {
         font-size: 40px;
     }
 
-    main .equipes .cadastro hr {
+    main .jogadores .cadastro hr {
         width: 404px;
     }
 
-    main .equipes .cadastro .id,
-    .nome {
+    main .jogadores .cadastro input {
         width: 565px;
         height: 40px;
     }
 
-    main .equipes .cadastro .button {
+    main .jogadores .cadastro .button {
         width: 273px;
         height: 40px;
     }
 
-    main .equipes .tabela {
+    main .jogadores .tabela {
         width: 800px;
         height: 150px;
     }
 
-    main .equipes .tabela .header-table th {
+    main .jogadores .tabela .header-table th {
         font-size: 30px;
     }
 
-    main .equipes .tabela .equipe-table .foto {
+    main .jogadores .tabela .jogadores-table .foto {
         width: 112px;
         height: 57px;
     }
 
-    main .equipes .tabela .equipe-table .lixo {
+    main .jogadores .tabela .jogadores-table .lixo {
         width: 37px;
         height: 35px;
     }
 
-    main .equipes .tabela .equipe-table:last-of-type {
+    main .jogadores .tabela .jogadores-table:last-of-type {
         display: none;
     }
 
