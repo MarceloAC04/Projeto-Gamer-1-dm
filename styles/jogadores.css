@@ -258,6 +258,8 @@ main .jogadores .cadastro button {
 }
 
 main .jogadores .tabela {
+    -webkit-border-vertical-spacing: 24px;
+    -webkit-border-horizontal-spacing: 0px;
     width: 90%;
 }
 
@@ -286,13 +288,13 @@ main .jogadores .tabela .jogadores-table {
 main .jogadores .tabela .jogadores-table td {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
-    line-height: 30px;
     text-align: center;
-    border-right: 2px solid #F9AA01;
 }
 
-main .jogadores .tabela .jogadores-table>td:last-of-type {
-    border-right: transparent;
+main .jogadores .tabela .jogadores-table hr {
+    display: inline;
+    margin-left: 20px;
+    border-color: #F9AA01;
 }
 
 /* Footer */

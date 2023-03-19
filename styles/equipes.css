@@ -234,6 +234,8 @@ main .equipes .cadastro button {
 }
 
 main .equipes .tabela {
+    -webkit-border-vertical-spacing: 24px;
+    -webkit-border-horizontal-spacing: 0px;
     width: 90%;
 }
 
@@ -246,7 +248,6 @@ main .equipes .tabela th {
 main .equipes .tabela .header-table th {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
-    line-height: 30px;
     color: #F9AA01;
 }
 
@@ -262,15 +263,14 @@ main .equipes .tabela .equipe-table {
 main .equipes .tabela .equipe-table td {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
-    line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-
-    border-right: 2px solid #F9AA01;
 }
 
-main .equipes .tabela .equipe-table>td:last-of-type {
-    border-right: transparent;
+main .equipes .tabela .equipe-table hr {
+    display: inline;
+    margin-left: 20px;
+    border-color: #F9AA01;
 }
 
 /* Footer */
