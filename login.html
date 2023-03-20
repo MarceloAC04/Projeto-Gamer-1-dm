@@ -113,66 +113,107 @@
         <section class="login alinhamento-between-center">
             <form action="" class="logar alinhamento-between-center">
                 <h1>Login</h1>
-                <input type="email" class="email" placeholder="          Digite o seu email:">
-                <input type="password" class="senha" placeholder="          Digite a sua senha:">
+                <div class="alinhamento-between-center">
+                    <img src="../Projeto-Gamer-1-dm/assets/icones/user-login.svg" alt="">
+                    <input type="email" class="email" placeholder="Digite o seu email:">
+                </div>
+                <div class="alinhamento-between-center">
+                    <img src="../Projeto-Gamer-1-dm/assets/icones/chave.svg" alt="">
+                    <input type="password" class="senha" placeholder="Digite a sua senha:">
+                </div>
                 <button type="submit">Logar</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <div class="layout-grid footer-flex">
-            <div class="divulgacao">
-                <img class="logo" src="../Projeto-Gamer-1-dm/assets/images/Logotipo gamer.png"
-                    alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
+        <div class="layout-grid footer-top">
+
+            <div id="sobre">
+                <img id="logo" src="./assets/images/Logotipo gamer.png"
+                    alt="Logotipo, imagem com texto gamer e um controle de vídeo game ao centro">
 
                 <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
-                    altamente
-                    comprometida.</p>
-                <div class="midias-sociais">
+                    altamente comprometida.</p>
+
+                <div id="midias-sociais-footer">
                     <a href="">
-                        <img src="../Projeto-Gamer-1-dm/assets/icones/facebook-rodapé.svg"
-                            alt="Imagem do link do Facebook da empresa">
+                        <img src="./assets/icones/facebook-rodapé.svg" alt="Ícone do Facebook">
                     </a>
                     <a href="">
-                        <img src="../Projeto-Gamer-1-dm/assets/icones/linkedin-rodapé.svg"
-                            alt="Imagem do link do Linkedin da empresa">
+                        <img src="./assets/icones/linkedin-rodapé.svg" alt="Ícone do Linkedin">
                     </a>
                     <a href="">
-                        <img src="../Projeto-Gamer-1-dm/assets/icones/instagram-rodapé.svg"
-                            alt="Imagem do link do Instagram da empresa">
+                        <img src="./assets/icones/instagram-rodapé.svg" alt="Ícone do Instagram">
                     </a>
                 </div>
+            </div>
 
+            <div id="links-uteis">
+                <div class="titulos-footer">
+                    <h3>Links Úteis</h3>
+                    <hr>
+                </div>
+
+                <ul class="menu-footer">
+                    <li>
+                        <a href="../Projeto-Gamer-1-dm/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="../Projeto-Gamer-1-dm/jogadores.html">Jogadores</a>
+                    </li>
+                    <li>
+                        <a href="">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="">Login</a>
+                    </li>
+                    <li>
+                        <a href="../Projeto-Gamer-1-dm/equipes.html">Equipes</a>
+                    </li>
+                </ul>
             </div>
-            <div class="links-uteis">
-                <h1>Links Úteis</h1>
-                <hr>
-                <a href="../Projeto-Gamer-1-dm/index.html">Início</a>
-                <a href="../Projeto-Gamer-1-dm/jogadores.html">Jogadores</a>
-                <a href="#section-noticia">Notícia</a>
-                <a href="">Login</a>
-                <a href="../Projeto-Gamer-1-dm/equipes.html">Equipes</a>
+
+
+            <div id="contatos">
+                <div class="titulos-footer">
+                    <h3>Contatos</h3>
+                    <hr>
+                </div>
+
+                <p>
+                    <span class="contatos-titulo">Localização:</span>
+                    Rua Niterói, 180 - São Caetano do Sul- SP
+                </p>
+
+                <p>
+                    <span class="contatos-titulo">Junte-se a nós:</span>
+                    contato@gamer.com.br
+                </p>
+
+                <p>
+                    <span class="contatos-titulo">Telefone:</span>
+                    (11) 0900-1010
+                </p>
             </div>
-            <div class="contato">
-                <h1>Contatos</h1>
-                <hr>
-                <p class="contato-info">Localização:</p>
-                <p>Rua Niterói, 180 - São Caetano do Sul - SP</p>
-                <p class="contato-info">Junte - se a nós:</p>
-                <p>contato@gamer.com</p>
-                <p class="contato-info">Telefone:</p>
-                <p>(11) 0900-1010</p>
+
+            <div id="newsletter">
+                <div class="titulos-footer">
+                    <h3>Newsletter</h3>
+                    <hr>
+                </div>
+
+                <form action="" class="frm-news">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <button>Enviar</button>
+                </form>
             </div>
-            <form action="" class="newsletter">
-                <h1>Newsletter</h1>
-                <hr>
-                <input type="email" class="email-footer" placeholder="Digite o seu email:">
-                <button type="submit" class="botao-enviar">Enviar</button>
-            </form>
-            <img class="rodapé-button" src="../Projeto-Gamer-1-dm/assets/icones/Rodapé Botão início.svg"
+
+        </div> <!-- fim da footer-top -->
+        <div class="layout-grid footer-bottom">
+            <img id="rodapé-button" src="../Projeto-Gamer-1-dm/assets/icones/Rodapé Botão início.svg"
                 alt="Botão com uma seta para cima que retorna ao início">
-            <p class="copyright">@Copyright2023-GamerjogosDigitais</p>
+            <p id="copyright">@Copyright2023-GamerjogosDigitais</p>
         </div>
     </footer>
 

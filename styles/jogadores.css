@@ -302,135 +302,152 @@ main .jogadores .tabela .jogadores-table hr {
 
 /* Footer */
 footer {
-    height: 1488px;
     background-image: url(../assets/images/rodapé\ mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
-footer .footer-flex {
+footer .footer-top {
+    height: 1484px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-footer .divulgacao {
-    display: flex;
-    flex-direction: column;
-}
 
-footer .divulgacao .logo {
-    align-self: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    height: 31px;
-    width: 110px;
-}
-
-footer .divulgacao p {
-    margin-bottom: 40px;
-    font-family: Quicksand;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-}
-
-footer .midias-sociais {
-    display: flex;
-    width: 328px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer h1 {
+footer .footer-top .titulos-footer h3 {
     font-family: TitilliumWeb-Black;
     font-size: 30px;
-    margin-bottom: 10px;
-
 }
 
-footer hr {
-    border: 1px solid #F9AA01;
+footer .footer-top .titulos-footer hr {
+    border: 2px solid #F9AA01;
+    width: 112px;
+}
+
+footer .footer-top #sobre {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-top #sobre #logo {
+    width: 115px;
+    height: 32px;
+}
+
+footer .footer-top #sobre p {
+    font-family: Quicksand;
+    font-size: 16px;
+}
+
+footer .footer-top #midias-sociais-footer {
+    display: flex;
+    gap: 70px;
+}
+
+/* lista ul */
+footer .footer-top .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* ítens da lista */
+footer .footer-top .menu-footer li {
+    list-style-type: none;
+    width: 110px;
     margin-bottom: 20px;
-    width: 104px;
-
+    /* border: 1px solid #FD4255; */
 }
 
-footer .links-uteis a {
-    font-family: TitilliumWeb;
+footer .footer-top .menu-footer a {
     color: white;
     text-decoration: none;
+    font-family: TitilliumWeb;
     font-size: 16px;
-    padding-left: 5px;
-
-    display: inline-flex;
-    align-items: center;
-    height: 1px;
-
-
-    border-left: 1px solid #F9AA01;
-    border-left-width: 17px;
-    margin-right: 32px;
-    margin-bottom: 32px;
-
 }
 
-footer .contato .contato-info {
+footer .footer-top .menu-footer a:before {
+    content: "\2015";
+    margin-right: 10px;
     color: #F9AA01;
-    font-family: TitilliumWeb;
-    font-size: 16px;
 }
 
-footer .contato p {
-    font-family: TitilliumWeb;
-    font-size: 16px;
-    line-height: 23px;
-}
+/* Contatos */
 
-footer .newsletter .email-footer {
-    height: 40px;
-    width: 333px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-
-    background: linear-gradient(to right bottom, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
-    border: 1px solid #000000;
-    backdrop-filter: blur(3px);
-
-}
-
-.email-footer::placeholder {
-    font-family: TitilliumWeb;
-    font-size: 16px;
+footer .footer-top #contatos {
     color: white;
-    text-align: left;
-    padding-left: 10px;
+    font-family: TitilliumWeb-Black;
+    font-size: 16px;
 }
 
-footer .newsletter .botao-enviar {
+footer .footer-top #contatos p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: TitilliumWeb;
+}
+
+footer .footer-top #contatos p span {
+    color: #F9AA01;
+}
+
+/* newsletter */
+
+footer #newsletter input,
+footer #newsletter button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+footer #newsletter input {
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    backdrop-filter: blur(6px);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    font-family: TitilliumWeb;
+    font-size: 16px;
+}
+
+footer #newsletter input::placeholder {
+    color: white;
+}
+
+footer #newsletter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
     font-family: TitilliumWeb-Black;
     font-size: 24px;
-    color: black;
-    height: 40px;
-    width: 333px;
-
-    background: #F9AA01;
-    border: 1px solid #000000;
-    border-radius: 8px;
 }
 
+footer .footer-bottom {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
 
-footer .rodapé-button {
+footer .footer-bottom #rodapé-button {
     align-self: flex-end;
+    width: 47px;
+    height: 47px;
 }
 
-footer .copyright {
-    align-self: center;
-    margin-bottom: 50px;
-    font-family: TitilliumWeb;
-    font-size: 16px;
+footer .footer-bottom #copyright {
+    font-family: Quicksand;
 }
+
 
 /* MEDIAS QUIERES */
 
@@ -602,79 +619,40 @@ footer .copyright {
     }
 
     /* Footer Deskstop */
-
     footer {
-        position: relative;
-        height: 520px;
         background-image: url(../assets/images/Rodapé.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    footer .footer-flex {
+    footer .footer-top {
+        height: 584px;
         flex-direction: row;
     }
 
-    footer .divulgacao .logo {
-        margin-right: 50px;
-        width: 200px;
-        height: 60px;
-    }
-
-    footer .divulgacao .midias-sociais {
-        justify-content: space-evenly;
-        padding-right: 80px;
-    }
-
-    footer .divulgacao p {
-        font-size: 16px;
-        height: 77px;
-        width: 285px;
-    }
-
-    footer .links-uteis {
+    footer .footer-top>div {
         margin-top: 50px;
-        margin-left: 27px;
     }
 
-    footer .links-uteis h1 {
-        width: 148px;
+    footer .footer-top #sobre {
+        text-align: left;
+        width: 280px;
     }
 
-    footer .contato {
-        margin-top: 50px;
-        margin-left: 117px;
-        margin-right: 10px;
+    footer .footer-top #sobre p {
+        padding-left: 10px;
     }
 
-    footer .contato p {
-        width: 309px;
+    footer .footer-top #sobre #logo {
+        width: 230px;
+        height: 64px;
     }
 
-    footer .newsletter {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        left: 31px;
+    footer .footer-top #links-uteis {
+        width: 155px;
     }
 
-    footer .newsletter .button {
-        height: 34px;
-        width: 257px;
-    }
-
-
-    footer .rodapé-button {
-        position: absolute;
-        bottom: 70px;
-        right: 50px;
-    }
-
-    footer .copyright {
-        position: absolute;
-        align-self: last baseline;
-        left: 40%;
-        width: 270px;
+    footer .footer-top #newsletter {
+        width: 287px;
     }
 }
