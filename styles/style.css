@@ -331,7 +331,6 @@ main .info .banner-info .jogos {
 
     height: 300px;
     width: 231px;
-    border: 2px solid white;
     border-radius: 8px;
 
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80));
@@ -384,7 +383,6 @@ main .info .banner-info-2 .professores {
 
     height: 300px;
     width: 231px;
-    border: 2px solid white;
     border-radius: 8px;
 
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80));
@@ -560,12 +558,7 @@ footer .contato p {
     line-height: 23px;
 }
 
-footer .newsletter .envie {
-    font-family: TitilliumWeb;
-    font-size: 16px;
-    color: white;
-    text-align: left;
-    padding-left: 10px;
+footer .newsletter .email-footer {
     height: 40px;
     width: 333px;
     border-radius: 8px;
@@ -575,6 +568,14 @@ footer .newsletter .envie {
     border: 1px solid #000000;
     backdrop-filter: blur(3px);
 
+}
+
+.email-footer::placeholder {
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
 }
 
 footer .newsletter .botao-enviar {
@@ -863,10 +864,9 @@ footer .copyright {
         font-size: 16px;
         font-family: Quicksand;
         line-height: 20px;
-        font-weight: 400;
         font-style: normal;
         text-transform: uppercase;
-        text-align: justify;
+        text-align: left;
     }
 
     /* Notícia Desktop */
