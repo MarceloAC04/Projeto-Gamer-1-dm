@@ -192,7 +192,34 @@ main .login {
     background-image: url(../assets/images/Login-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
-    backdrop-filter: blur(1px);
+    position: relative;
+}
+
+.login::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+
+}
+
+main .login .logar {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 462px;
+    width: 335px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(152.38deg, rgba(27, 20, 38, 0.6) 1.56%, rgba(60, 3, 65, 0.38) 99.03%);
+    border-radius: 8px;
+
+}
+
+main .login .logar {
+    position: relative;
+    z-index: 2;
+
 }
 
 main .login .logar h1 {
@@ -239,15 +266,6 @@ main .login .logar button {
 
 }
 
-main .login .logar {
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 462px;
-    width: 335px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(152.38deg, rgba(27, 20, 38, 0.6) 1.56%, rgba(60, 3, 65, 0.38) 99.03%);
-    border-radius: 8px;
-
-}
 
 /* Footer */
 footer {

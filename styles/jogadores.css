@@ -206,23 +206,34 @@ main .jogadores .cadastro hr {
 main .jogadores .cadastro input {
     width: 273px;
     height: 40px;
+    padding-left: 12px;
 
     background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
     border-radius: 8px;
 }
 
-.id::placeholder {
+main .jogadores .cadastro .selecione {
+    width: 273px;
+    height: 40px;
+    justify-content: space-around;
+
+    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
+    border-radius: 8px;
+}
+
+main .jogadores .cadastro .selecione select {
+    border: transparent;
+    background-color: transparent;
+}
+
+main .jogadores .cadastro .selecione::before {
+    content: "Selecione uma equipe";
     font-family: TitilliumWeb;
     font-size: 16px;
     line-height: 24px;
-    color: white;
 }
 
-.selecione::placeholder {
-    background-image: url(../assets/icones/selection.svg);
-    background-repeat: no-repeat;
-    background-position: 95%;
-
+.id::placeholder {
     font-family: TitilliumWeb;
     font-size: 16px;
     line-height: 24px;
@@ -586,8 +597,17 @@ footer .footer-bottom #copyright {
     }
 
     main .jogadores .cadastro input {
+        padding-left: 20px;
         width: 565px;
         height: 40px;
+    }
+
+    main .jogadores .cadastro .selecione {
+        width: 565px;
+    }
+
+    main .jogadores .cadastro .selecione select {
+        width: 340px;
     }
 
     main .jogadores .cadastro .button {

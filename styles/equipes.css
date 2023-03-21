@@ -204,6 +204,7 @@ main .equipes .cadastro .id,
 .nome {
     width: 273px;
     height: 40px;
+    padding-left: 10px;
 
     background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
     border-radius: 8px;
@@ -222,6 +223,40 @@ main .equipes .cadastro .id,
     line-height: 24px;
     color: white;
 }
+
+main .equipes .cadastro .image {
+    width: 90%;
+}
+
+main .equipes .cadastro #fake-input {
+    position: relative;
+    width: 143px;
+    height: 46px;
+    font-family: TitilliumWeb;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    background: #D9D9D9;
+    border-radius: 8px;
+}
+
+main .equipes .cadastro .image::after {
+    content: "Nenhuma imagem relacionada";
+    width: 136px;
+    height: 21px;
+    font-family: TitilliumWeb;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+}
+
+main .equipes .cadastro .image-equipe {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 12%;
+    opacity: 0;
+} 
 
 main .equipes .cadastro button {
     width: 273px;
@@ -561,6 +596,31 @@ footer .footer-bottom #copyright {
     .nome {
         width: 565px;
         height: 40px;
+    }
+
+    main .equipes .cadastro .image {
+        justify-content: space-around;
+    }
+
+    main .equipes .cadastro #fake-input {
+        width: 273px;
+        height: 40px;
+        font-family: TitilliumWeb;
+        font-size: 24px;
+        line-height: 37px;
+    }
+
+    main .equipes .cadastro .image::after {
+        width: 205px;
+        height: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    main .equipes .cadastro .image-equipe {
+        width: 270px;
+        left: 30%;
     }
 
     main .equipes .cadastro .button {
