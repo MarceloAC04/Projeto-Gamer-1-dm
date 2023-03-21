@@ -44,9 +44,6 @@ body {
     margin: 0 auto;
 }
 
-
-
-
 /* justify content + align-items */
 .alinhamento-between-center {
     display: flex;

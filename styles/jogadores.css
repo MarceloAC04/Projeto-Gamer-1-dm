@@ -178,8 +178,17 @@ main .jogadores {
     background-image: url(../assets/images/jogadores\ -\ mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
 
-    backdrop-filter: blur(3px);
+main .jogadores::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
 }
 
 main .jogadores .cadastro {
@@ -187,6 +196,7 @@ main .jogadores .cadastro {
     justify-content: space-evenly;
     height: 492px;
     width: 335px;
+    z-index: 2;
     border-radius: 8px;
     background: linear-gradient(155.31deg, rgba(27, 20, 38, 0.6) 1.6%, rgba(60, 3, 65, 0.38) 99.01%);
 
@@ -272,6 +282,7 @@ main .jogadores .cadastro button {
 }
 
 main .jogadores .tabela {
+    z-index: 2;
     -webkit-border-vertical-spacing: 24px;
     -webkit-border-horizontal-spacing: 0px;
     width: 90%;
@@ -299,17 +310,19 @@ main .jogadores .tabela .jogadores-table {
     border-radius: 8px;
 }
 
-main .jogadores .tabela .jogadores-table td {
+main .jogadores .tabela .jogadores-table .text-table {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
     text-align: center;
 }
 
-main .jogadores .tabela .jogadores-table hr {
-    display: inline;
-    margin-left: 20px;
-    border-color: #F9AA01;
+main .jogadores .tabela .jogadores-table .text-table::after {
+    content: "";
+    border-left: 2px solid #F9AA01;
+    margin-left: 10px;
 }
+
+
 
 /* Footer */
 footer {
@@ -624,18 +637,13 @@ footer .footer-bottom #copyright {
         font-size: 30px;
     }
 
-    main .jogadores .tabela .jogadores-table .foto {
-        width: 112px;
-        height: 57px;
+    main .jogadores .tabela .jogadores  .text-table::after {
+        margin-left: 15px;
     }
 
     main .jogadores .tabela .jogadores-table .lixo {
         width: 37px;
         height: 35px;
-    }
-
-    main .jogadores .tabela .jogadores-table:last-of-type {
-        display: none;
     }
 
     /* Footer Deskstop */

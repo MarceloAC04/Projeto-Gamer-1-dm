@@ -178,11 +178,23 @@ main .equipes {
     background-image: url(../assets/images/equipes-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+ main .equipes::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
 }
 
 main .equipes .cadastro {
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 2;
     height: 492px;
     width: 335px;
     border-radius: 8px;
@@ -256,7 +268,7 @@ main .equipes .cadastro .image-equipe {
     height: 40px;
     left: 12%;
     opacity: 0;
-} 
+}
 
 main .equipes .cadastro button {
     width: 273px;
@@ -272,6 +284,7 @@ main .equipes .tabela {
     -webkit-border-vertical-spacing: 24px;
     -webkit-border-horizontal-spacing: 0px;
     width: 90%;
+    z-index: 2;
 }
 
 main .equipes .tabela th {
@@ -302,10 +315,15 @@ main .equipes .tabela .equipe-table td {
     text-transform: uppercase;
 }
 
-main .equipes .tabela .equipe-table hr {
-    display: inline;
-    margin-left: 20px;
-    border-color: #F9AA01;
+main .equipes .tabela .equipe-table td #foto {
+    width: 30px;
+    border-radius: 8px;
+}
+
+main .equipes .tabela .equipe-table .table-text::after {
+    content: "";
+    border-left: 2px solid #F9AA01;
+    margin-left: 10px;
 }
 
 /* Footer */
@@ -577,6 +595,7 @@ footer .footer-bottom #copyright {
         background-image: url(../assets/images/Equipes.png);
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
     }
 
     main .equipes .cadastro {
@@ -637,18 +656,21 @@ footer .footer-bottom #copyright {
         font-size: 30px;
     }
 
-    main .equipes .tabela .equipe-table .foto {
-        width: 112px;
-        height: 57px;
+    main .equipes .tabela .equipe-table td #foto {
+        width: 45px;
+        height: 24px;
+        border-radius: 8px;
+    }
+
+    main .equipes .tabela .equipe-table .table-text::after {
+        content: "";
+        border-left: 2px solid #F9AA01;
+        margin-left: 15px;
     }
 
     main .equipes .tabela .equipe-table .lixo {
         width: 37px;
         height: 35px;
-    }
-
-    main .equipes .tabela .equipe-table:last-of-type {
-        display: none;
     }
 
     /* Footer Deskstop */
