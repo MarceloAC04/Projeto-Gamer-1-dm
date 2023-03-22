@@ -169,6 +169,7 @@ header .header-bottom .midias-sociais {
 }
 
 /* Main */
+/* formulario */
 
 main .jogadores {
     height: 1411px;
@@ -220,6 +221,7 @@ main .jogadores .cadastro input {
 
     background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
     border-radius: 8px;
+    color: white;
 }
 
 main .jogadores .cadastro .selecione {
@@ -281,6 +283,8 @@ main .jogadores .cadastro button {
     border-radius: 8px;
 }
 
+/* Tabela */
+
 main .jogadores .tabela {
     z-index: 2;
     -webkit-border-vertical-spacing: 24px;
@@ -290,7 +294,7 @@ main .jogadores .tabela {
 
 main .jogadores .tabela th {
     text-transform: uppercase;
-    border-bottom: 2px solid #F9AA01;
+    border-bottom: 1px solid #F9AA01;
     margin-bottom: 10px;
 }
 
@@ -318,7 +322,7 @@ main .jogadores .tabela .jogadores-table .text-table {
 
 main .jogadores .tabela .jogadores-table .text-table::after {
     content: "";
-    border-left: 2px solid #F9AA01;
+    border-right: 3px solid #F9AA01;
     margin-left: 10px;
 }
 
@@ -627,6 +631,7 @@ footer .footer-bottom #copyright {
         width: 273px;
         height: 40px;
     }
+    /* tabela desktop */
 
     main .jogadores .tabela {
         width: 800px;
@@ -644,6 +649,10 @@ footer .footer-bottom #copyright {
     main .jogadores .tabela .jogadores-table .lixo {
         width: 37px;
         height: 35px;
+    }
+
+    main .jogadores .tabela .jogadores-table:last-of-type {
+        display: none;
     }
 
     /* Footer Deskstop */

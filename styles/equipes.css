@@ -169,6 +169,7 @@ header .header-bottom .midias-sociais {
 }
 
 /* Main */
+/* formulario */
 
 main .equipes {
     height: 1237px;
@@ -220,7 +221,9 @@ main .equipes .cadastro .id,
 
     background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
     border-radius: 8px;
+    color: white;
 }
+
 
 .id::placeholder {
     font-family: TitilliumWeb;
@@ -279,6 +282,7 @@ main .equipes .cadastro button {
     background-color: #F9AA01;
     border-radius: 8px;
 }
+/* tabela */
 
 main .equipes .tabela {
     -webkit-border-vertical-spacing: 24px;
@@ -289,7 +293,7 @@ main .equipes .tabela {
 
 main .equipes .tabela th {
     text-transform: uppercase;
-    border-bottom: 2px solid #F9AA01;
+    border-bottom: 1px solid #F9AA01;
     margin-bottom: 10px;
 }
 
@@ -322,7 +326,7 @@ main .equipes .tabela .equipe-table td #foto {
 
 main .equipes .tabela .equipe-table .table-text::after {
     content: "";
-    border-left: 2px solid #F9AA01;
+    border-right: 3px solid #F9AA01;
     margin-left: 10px;
 }
 
@@ -587,8 +591,8 @@ footer .footer-bottom #copyright {
         font-weight: 400;
     }
 
-    /* Main */
-    /* Cadastro */
+    /* Main Desktop */
+    /* Formulario Desktop*/
     main .equipes {
         height: 1480px;
 
@@ -646,6 +650,7 @@ footer .footer-bottom #copyright {
         width: 273px;
         height: 40px;
     }
+    /* Tabela desktop */
 
     main .equipes .tabela {
         width: 800px;
@@ -671,6 +676,10 @@ footer .footer-bottom #copyright {
     main .equipes .tabela .equipe-table .lixo {
         width: 37px;
         height: 35px;
+    }
+
+    main .equipes .tabela .equipe-table:last-of-type {
+        display: none;
     }
 
     /* Footer Deskstop */

@@ -238,6 +238,7 @@ main .login .logar div input {
     background: transparent;
     width: 210px;
     border: none;
+    color: white;
 }
 
 .email::placeholder {
