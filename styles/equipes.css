@@ -321,13 +321,25 @@ main .equipes .tabela .equipe-table td {
 
 main .equipes .tabela .equipe-table td #foto {
     width: 30px;
-    border-radius: 8px;
+    height: 22px;
 }
 
 main .equipes .tabela .equipe-table .table-text::after {
     content: "";
     border-right: 3px solid #F9AA01;
-    margin-left: 10px;
+    padding-right: 10px;
+}
+
+main .equipes .tabela .equipe-table .table-nome {
+    width: 100px;
+    text-align: left;
+}
+
+main .equipes .tabela .equipe-table .table-nome::after {
+    content: "";
+    border-right: 3px solid #F9AA01;
+    position: relative;
+    left: 80px;
 }
 
 /* Footer */
@@ -663,14 +675,14 @@ footer .footer-bottom #copyright {
 
     main .equipes .tabela .equipe-table td #foto {
         width: 45px;
-        height: 24px;
-        border-radius: 8px;
     }
 
     main .equipes .tabela .equipe-table .table-text::after {
-        content: "";
-        border-left: 2px solid #F9AA01;
-        margin-left: 15px;
+        padding-right: 15px;
+    }
+
+    main .equipes .tabela .equipe-table .table-nome::after {
+        left: 185px;
     }
 
     main .equipes .tabela .equipe-table .lixo {

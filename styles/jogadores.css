@@ -314,7 +314,7 @@ main .jogadores .tabela .jogadores-table {
     border-radius: 8px;
 }
 
-main .jogadores .tabela .jogadores-table .text-table {
+main .jogadores .tabela .jogadores-table td {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
     text-align: center;
@@ -323,10 +323,15 @@ main .jogadores .tabela .jogadores-table .text-table {
 main .jogadores .tabela .jogadores-table .text-table::after {
     content: "";
     border-right: 3px solid #F9AA01;
-    margin-left: 10px;
+    padding-right: 10px;
 }
 
-
+main .jogadores .tabela .jogadores-table .text-nome::after {
+    content: "";
+    border-right: 3px solid #F9AA01;
+    position: relative;
+    left: 25px;
+}
 
 /* Footer */
 footer {
@@ -642,8 +647,12 @@ footer .footer-bottom #copyright {
         font-size: 30px;
     }
 
-    main .jogadores .tabela .jogadores  .text-table::after {
-        margin-left: 15px;
+    main .jogadores .tabela .jogadores-table  .text-table::after {
+        padding-right: 15px;
+    }
+
+    main .jogadores .tabela .jogadores-table .text-nome::after {
+        left: 190px;
     }
 
     main .jogadores .tabela .jogadores-table .lixo {
