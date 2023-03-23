@@ -147,8 +147,6 @@ header .header-bottom nav>a:last-of-type {
     border: none;
 }
 
-
-
 header .header-bottom nav a {
     text-decoration: none;
     font-size: 15px;
@@ -234,7 +232,7 @@ main .login .logar div {
     height: 40px;
     padding-left: 15px;
     border: 2px solid transparent;
-    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%)  padding-box,
+    background: linear-gradient(91.23deg,  rgba(27, 20, 38, .6), rgba(60, 3, 65, .38) ) padding-box,
     /* fundo borda */
     linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;;;
     border-radius: 8px;
@@ -266,6 +264,7 @@ main .login .logar button {
     font-family: TitilliumWeb-Black;
     font-size: 24px;
     background: #F9AA01;
+    border: 1px solid black;
     border-radius: 8px;
 
 }

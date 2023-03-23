@@ -203,7 +203,7 @@ main .jogadores .cadastro {
     background: linear-gradient(164.86deg, rgba(27, 20, 38, 0.6) 1.6%, rgba(60, 3, 65, 0.38) 99.01%) padding-box,
         /* fundo borda */
         linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
-    ;
+    backdrop-filter: blur(4px);
 
 }
 
@@ -223,9 +223,10 @@ main .jogadores .cadastro input {
     height: 40px;
     padding-left: 12px;
     border: 2px solid transparent;
-    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%) padding-box,
+    background: linear-gradient(91.23deg,  rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
         /* fundo borda */
         linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
     border-radius: 8px;
     color: white;
 }
@@ -235,9 +236,10 @@ main .jogadores .cadastro .selecione {
     height: 40px;
     justify-content: space-around;
     border: 2px solid transparent;
-    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%) padding-box,
+    background: linear-gradient(91.23deg,  rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
         /* fundo borda */
         linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
     border-radius: 8px;
 }
 
@@ -286,7 +288,7 @@ main .jogadores .cadastro button {
     height: 40px;
     font-family: TitilliumWeb-Black;
     font-size: 24px;
-
+    border: 1px solid black;
     background-color: #F9AA01;
     border-radius: 8px;
 }

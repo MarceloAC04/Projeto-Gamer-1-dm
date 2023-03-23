@@ -44,9 +44,6 @@ body {
     margin: 0 auto;
 }
 
-
-
-
 /* justify content + align-items */
 .alinhamento-between-center {
     display: flex;
@@ -80,7 +77,6 @@ header .header-bottom {
 header .header-bottom img.logo {
     width: 86px;
 }
-
 
 header .header-bottom nav {
     position: fixed;
