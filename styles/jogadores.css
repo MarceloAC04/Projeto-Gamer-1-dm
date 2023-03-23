@@ -199,7 +199,11 @@ main .jogadores .cadastro {
     width: 335px;
     z-index: 2;
     border-radius: 8px;
-    background: linear-gradient(155.31deg, rgba(27, 20, 38, 0.6) 1.6%, rgba(60, 3, 65, 0.38) 99.01%);
+    border: 2px solid transparent;
+    background: linear-gradient(164.86deg, rgba(27, 20, 38, 0.6) 1.6%, rgba(60, 3, 65, 0.38) 99.01%) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    ;
 
 }
 
@@ -218,8 +222,10 @@ main .jogadores .cadastro input {
     width: 273px;
     height: 40px;
     padding-left: 12px;
-
-    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
+    border: 2px solid transparent;
+    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
     border-radius: 8px;
     color: white;
 }
@@ -228,8 +234,10 @@ main .jogadores .cadastro .selecione {
     width: 273px;
     height: 40px;
     justify-content: space-around;
-
-    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
+    border: 2px solid transparent;
+    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
     border-radius: 8px;
 }
 
@@ -239,7 +247,7 @@ main .jogadores .cadastro .selecione select {
 }
 
 main .jogadores .cadastro .selecione::before {
-    content: "Selecione uma equipe";
+    content: "Selecione uma equipe:";
     font-family: TitilliumWeb;
     font-size: 16px;
     line-height: 24px;
@@ -284,53 +292,76 @@ main .jogadores .cadastro button {
 }
 
 /* Tabela */
-
 main .jogadores .tabela {
-    z-index: 2;
-    -webkit-border-vertical-spacing: 24px;
-    -webkit-border-horizontal-spacing: 0px;
     width: 90%;
+    z-index: 2;
 }
 
-main .jogadores .tabela th {
-    text-transform: uppercase;
-    border-bottom: 1px solid #F9AA01;
-    margin-bottom: 10px;
+main .jogadores .tabela thead,
+main .jogadores .tabela tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
-main .jogadores .tabela .header-table th {
-    font-family: TitilliumWeb-Black;
-    font-size: 20px;
-    line-height: 30px;
+main .jogadores .tabela thead tr {
+    justify-content: left;
+    gap: 3px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #F9AA01;
+}
+
+main .jogadores .tabela thead th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50px;
     color: #F9AA01;
-}
-
-main .jogadores .tabela .jogadores-table {
-    width: 336px;
-    height: 70px;
-
-    background: linear-gradient(92.62deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 95.16%);
-    backdrop-filter: blur(5px);
-    border-radius: 8px;
-}
-
-main .jogadores .tabela .jogadores-table td {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
-    text-align: center;
+    text-transform: uppercase;
 }
 
-main .jogadores .tabela .jogadores-table .text-table::after {
-    content: "";
-    border-right: 3px solid #F9AA01;
-    padding-right: 10px;
+main .jogadores .tabela tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main .jogadores .tabela .jogadores-table .text-nome::after {
-    content: "";
-    border-right: 3px solid #F9AA01;
-    position: relative;
-    left: 25px;
+main .jogadores .tabela tbody tr {
+    height: 70px;
+    margin-bottom: 20px;
+    /* efeito da borda e do fundo glass */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+}
+
+main .jogadores .tabela td {
+    width: 100%;
+    height: 38px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: TitilliumWeb-Black;
+    text-transform: uppercase;
+    border-right: 2px solid #F9AA01;
+}
+
+main .jogadores .tabela td:last-of-type {
+    border: none;
+}
+
+main .jogadores .tabela td img.lixo {
+    width: 15px;
 }
 
 /* Footer */
@@ -441,9 +472,9 @@ footer #newsletter button {
 
 footer #newsletter input {
     background-color: transparent;
-    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    border: 1px solid black;
+    background: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
     backdrop-filter: blur(6px);
-    border: 1px solid white;
     color: white;
     padding: 5px 10px;
     font-family: TitilliumWeb;
@@ -460,6 +491,7 @@ footer #newsletter button {
     align-items: center;
     background-color: #F9AA01;
     font-family: TitilliumWeb-Black;
+    border: 1px solid black;
     font-size: 24px;
 }
 
@@ -636,6 +668,7 @@ footer .footer-bottom #copyright {
         width: 273px;
         height: 40px;
     }
+
     /* tabela desktop */
 
     main .jogadores .tabela {
@@ -643,24 +676,22 @@ footer .footer-bottom #copyright {
         height: 150px;
     }
 
-    main .jogadores .tabela .header-table th {
+    main .jogadores .tabela thead tr {
+        justify-content: left;
+    }
+
+    main .jogadores .tabela thead th {
         font-size: 30px;
+        width: 25%;
     }
 
-    main .jogadores .tabela .jogadores-table  .text-table::after {
-        padding-right: 15px;
+
+    main .jogadores .tabela tbody td img.lixo {
+        width: 30px;
+        height: 27px;
     }
 
-    main .jogadores .tabela .jogadores-table .text-nome::after {
-        left: 190px;
-    }
-
-    main .jogadores .tabela .jogadores-table .lixo {
-        width: 37px;
-        height: 35px;
-    }
-
-    main .jogadores .tabela .jogadores-table:last-of-type {
+    main .jogadores .tabela tbody tr:last-of-type {
         display: none;
     }
 

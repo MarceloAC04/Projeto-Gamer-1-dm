@@ -208,7 +208,11 @@ main .login .logar {
     justify-content: space-evenly;
     height: 462px;
     width: 335px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(152.38deg, rgba(27, 20, 38, 0.6) 1.56%, rgba(60, 3, 65, 0.38) 99.03%);
+    border: 2px solid transparent;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(152.38deg, rgba(27, 20, 38, 0.6) 1.56%, rgba(60, 3, 65, 0.38) 99.03%) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
     border-radius: 8px;
 
 }
@@ -229,8 +233,10 @@ main .login .logar div {
     width: 273px;
     height: 40px;
     padding-left: 15px;
-
-    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
+    border: 2px solid transparent;
+    background: linear-gradient(91.23deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%)  padding-box,
+    /* fundo borda */
+    linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;;;
     border-radius: 8px;
 }
 
@@ -373,9 +379,9 @@ footer #newsletter button {
 
 footer #newsletter input {
     background-color: transparent;
-    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    border: 1px solid black;
+    background: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
     backdrop-filter: blur(6px);
-    border: 1px solid white;
     color: white;
     padding: 5px 10px;
     font-family: TitilliumWeb;
@@ -392,6 +398,7 @@ footer #newsletter button {
     align-items: center;
     background-color: #F9AA01;
     font-family: TitilliumWeb-Black;
+    border: 1px solid black;
     font-size: 24px;
 }
 
@@ -567,7 +574,6 @@ footer .footer-bottom #copyright {
         width: 201px;
 
     }
-
 
     /* Footer Deskstop */
 

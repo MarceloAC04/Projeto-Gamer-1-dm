@@ -332,8 +332,10 @@ main .info .banner-info .jogos {
     height: 300px;
     width: 231px;
     border-radius: 8px;
-
-    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80));
+    border: 2px solid transparent;
+    background: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80))  padding-box,
+    /* fundo borda */
+    linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
     backdrop-filter: blur(3.5px);
 }
 
@@ -384,8 +386,10 @@ main .info .banner-info-2 .professores {
     height: 300px;
     width: 231px;
     border-radius: 8px;
-
-    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80));
+    border: 2px solid transparent;
+    background: linear-gradient(to right bottom, rgba(122, 49, 236, 0.20), rgba(122, 49, 236, 0.80))  padding-box,
+    /* fundo borda */
+    linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;;
     backdrop-filter: blur(3.5px);
 }
 
@@ -578,9 +582,9 @@ footer #newsletter button {
 
 footer #newsletter input {
     background-color: transparent;
-    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    border: 1px solid black;
+    background: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
     backdrop-filter: blur(6px);
-    border: 1px solid white;
     color: white;
     padding: 5px 10px;
     font-family: TitilliumWeb;
@@ -595,6 +599,7 @@ footer #newsletter button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
     background-color: #F9AA01;
     font-family: TitilliumWeb-Black;
     font-size: 24px;
