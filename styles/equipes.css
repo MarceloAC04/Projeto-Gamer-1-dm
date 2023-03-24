@@ -225,13 +225,13 @@ main .equipes .cadastro .id,
     padding-left: 10px;
     border: 2px solid transparent;
     border-radius: 8px;
-    background:
-        /* fundo */
-        linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
-        /* fundo borda */
-        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
-    backdrop-filter: blur(4px);
     color: white;
+    background:
+    /* fundo */
+    linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box,
+    /* fundo borda */
+    linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
 }
 
 

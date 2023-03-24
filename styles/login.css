@@ -186,7 +186,7 @@ main .login {
 
     background-image: url(../assets/images/Login-mobile.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 }
 
