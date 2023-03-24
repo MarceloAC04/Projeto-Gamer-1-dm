@@ -231,6 +231,7 @@ main .equipes .cadastro .id,
         /* fundo borda */
         linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
     backdrop-filter: blur(4px);
+    color: white;
 }
 
 
